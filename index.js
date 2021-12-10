@@ -1,5 +1,13 @@
 const target = document.getElementById("target");
-let array = ["Web developer", "Analyst","Engineer","Investissor"];
+
+let array = [
+    "I'm",
+    "Your",
+    "Biggest",
+    "Fan",
+    "BOOBA",
+    "La Piraterie n'est Jamais Finie"
+];
 
 let wordIndex = 0; 
 let letterIndex = 0;
@@ -11,7 +19,7 @@ const createLetter = () =>{
     
     setTimeout(() => {
         letter.remove();
-    }, 2800);
+    }, 1500);
 }
 
 const loop = () =>{
@@ -25,8 +33,8 @@ const loop = () =>{
             letterIndex = 0;
             setTimeout(() => {
                 loop();
-            }, 2800);
+            }, 1000);
         }
-    }, 60);
+    }, 100);
 };
 loop();
