@@ -10,7 +10,7 @@ body {
   background-color: #dddacb70;
 }
 #target {display: flex; margin-left: 1rem;position: relative;}
-#target::after {content: ""; osition: absolute; height: 3rem; width: 5px; background: black; top: 0;
+#target::after {content: ""; position: absolute; height: 3rem; width: 5px; background: black; top: 0;
   transform: translateY(-4px);
   right: -5px;
   animation: anim 0.8s linear infinite;
