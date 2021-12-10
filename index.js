@@ -23,6 +23,11 @@ const createLetter = () =>{
 }
 
 const loop = () =>{
+    if (wordIndex >=array.length) {
+        wordIndex = 0;
+        letterIndex =0;
+        loop();
+    }
     setTimeout(() => {
         if (array[wordIndex].length > letterIndex) {
             createLetter();
